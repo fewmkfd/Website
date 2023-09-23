@@ -1,0 +1,121 @@
+*{margin: 0;
+  padding: 0;
+  font-family: sans-serif  
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-left:0;
+  padding-right:0;
+  box-sizing:border-box;
+  overflow: hidden
+;
+}
+
+/*navbar*/
+.navbar{
+  padding-left: 10%;
+  padding-right: 10%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.logo{
+  width:50px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+nav ul li a:hover{
+  color: red
+
+}
+
+/*feature Text*/
+.feature{
+  background-image: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0.5)), url(download.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 10%;
+min-height: 60vh;
+background-position: center;
+}
+.text{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+  grid-column: span 1/span 1;
+}
+
+.text h2{
+  font-size: 60px;
+}
+.text h3{
+   font-size: 25px;
+   font-weight: 600;
+   margin-top: 8px;
+}
+
+button{
+  margin-top: 8px;
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  transition: width 0.5s;
+}
+
+button:hover{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*feature image*/
+.image{
+  position: relative;
+  align-items: center;
+  grid-column: span 2/span 2;
+}
+.image .JapaneseGP{
+  width:80%;
+  object-position:45px 30px;
+}
+
+.image img{
+  width: 100%;
+  height: auto;
+
+}
+
+/* Track */
