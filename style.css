@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{margin: 0;
   padding: 0;
-  font-family: sans-serif  
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
 }
-
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+}
 .container{
   width: 100%;
   min-height: 100vh;
   padding-left:0;
   padding-right:0;
   box-sizing:border-box;
-  overflow: hidden
+  overflow: hidden;
+  background-color: black
 ;
 }
 
@@ -41,7 +47,7 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   font-size: 16px;
 }
 
@@ -52,7 +58,7 @@ nav ul li a:hover{
 
 /*feature Text*/
 .feature{
-  background-image: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0.5)), url(download.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.5)), url(WEBSITEIMAGES/download.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -60,6 +66,7 @@ nav ul li a:hover{
   align-items: center;
   margin: 0;
   padding-left: 10%;
+  padding-right: 10%;
 min-height: 60vh;
 background-position: center;
 }
@@ -67,7 +74,9 @@ background-position: center;
   flex-basis: 40%;
   position: relative;
   margin-left: 50px;
+  margin-right: 50px;
   grid-column: span 1/span 1;
+  color:white;
 }
 
 .text h2{
@@ -79,6 +88,9 @@ background-position: center;
    margin-top: 8px;
 }
 
+.text p{
+  font-size: 15px;
+}
 button{
   margin-top: 8px;
   width: 140px;
@@ -119,3 +131,51 @@ button:hover{
 }
 
 /* Track */
+.Track-images{
+  overflow-x: hidden;
+  width: 100%;
+  align-content:center;
+  justify-content: space-between;
+  display: flex;
+  column-gap: 16px;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.Track_row{
+  width: 100%;
+  max-height: 10%;
+  transition: transform 450ms;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.Track_row:hover{
+  transform: scale(1.03);
+}
+
+
+.Tracks h2{
+font-size: 60px;
+color: white;
+text-align: center;
+ 
+}
+
+.Tracks{
+  background-image: linear-gradient(to bottom, #1d1c1ad8, #000000);
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.Track-images img{
+  border-radius: 1rem;
+  border: 2px solid #ffffff;
+  max-width: 250px;
+  object-fit: fill;
+}
+.Track-images a{
+  all:initial
+}
