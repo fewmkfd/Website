@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
 @font-face {
@@ -14,7 +13,6 @@
   padding-left:0;
   padding-right:0;
   box-sizing:border-box;
-  overflow: hidden;
   background-color: black
 ;
 }
@@ -67,7 +65,7 @@ nav ul li a:hover{
   margin: 0;
   padding-left: 10%;
   padding-right: 10%;
-min-height: 60vh;
+min-height: 80vh;
 background-position: center;
 }
 .text{
@@ -178,4 +176,43 @@ text-align: center;
 }
 .Track-images a{
   all:initial;
+}
+
+/* Japanese GP */
+.japaninfo{
+  width:100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.5)), url(WEBSITEIMAGES/JapanBack.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  position:relative;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2rem
+}
+.jpinfo{
+  margin-top: 10%;
+  max-width: 600px;
+}
+.jpinfo h1{
+  font-size: 70px;
+  color:white;
+}
+.jpinfo h2{
+  font-size: 40px;
+  color:red;
+}
+.jpinfo p{
+  margin:10px 0 30px;
+  color: white;
+  font-weight: 400;
+}
+
+.japantrack{
+  width:900px;
+  height: auto;
+  position: relative;
+  margin-right: 300px;
 }
