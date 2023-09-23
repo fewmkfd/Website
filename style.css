@@ -144,7 +144,7 @@ button:hover{
   padding-bottom: 12px;
 }
 
-.Track_row{
+.Track_row a{
   width: 100%;
   max-height: 10%;
   transition: transform 450ms;
@@ -164,18 +164,18 @@ text-align: center;
  
 }
 
-.Tracks{
+.Tracks {
   background-image: linear-gradient(to bottom, #1d1c1ad8, #000000);
   margin-left: auto;
   margin-right:auto;
 }
 
-.Track-images img{
+.Track-images a img{
   border-radius: 1rem;
   border: 2px solid #ffffff;
   max-width: 250px;
   object-fit: fill;
 }
 .Track-images a{
-  all:initial
+  all:initial;
 }
