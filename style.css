@@ -187,7 +187,8 @@ text-align: center;
   background-size: cover;
   padding: 10px 10%;
   position:relative;
-  display: grid;
+  box-sizing:border-box;
+  display: flex;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
   gap: 2rem
@@ -211,8 +212,134 @@ text-align: center;
 }
 
 .japantrack{
-  width:900px;
+  width: 40%;
   height: auto;
   position: relative;
-  margin-right: 300px;
+  margin-left:300px;
+}
+.jpinf{
+  display:flex;
+  background-image: linear-gradient(to bottom, #191919, #000000);
+  padding: 10px 10%;
+}
+
+.jpinf h1{
+  color: white;
+  margin-left: 40%;
+  font-size: 14px;
+  width:60%;
+}
+/* Sidepanel */
+
+.panel1{
+  color:white;
+  margin-top:1rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.jpsidepanel{
+  flex:1;
+  border-collapse: collapse;
+  max-width: 30%;
+  width: 30%;
+}
+.jpsidepanel table{
+  width: 100%;
+  border-collapse: collapse;
+  }
+.panel1content{
+  width:100%;
+}
+.jpsidepanel thead{
+  background: red;  
+  color: white;
+}
+.jpsidepanel th{
+  padding: 15px;
+  text-align: center;
+}
+.jpsidepanel tbody{
+  color: white;
+}
+
+.Vflag{
+  width: 14px;
+}
+
+
+.jpsidepanel tbody{
+  color: white;
+}
+
+.stats{
+  width:100px;
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+table{
+  border-collapse:collapse;
+  width: 480px;
+
+}
+tr,td{border:1px solid #000000;}
+td,th{text-align:center;padding:5px 10px;}
+
+.table th{
+  width:430px;
+  background: red;
+}
+.tablestats{
+  margin-left: 9%;
+}
+
+.jpinf h1{
+  color:white
+}
+.jpinfotext{
+  flex: 1;
+  margin-top: 8rem;
+margin-left: 8rem;
+  color: white;
+}
+
+.jpinfotext h1{
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 0rem;
+}
+
+.jpinfotext p1{
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 0rem;
+}
+
+.table1{
+  border-collapse:collapse;
+  width: 480px;
+  margin-top: 15%;
+
+}
+tr,td{border:1px solid #000000;}
+td,th{text-align:center;padding:5px 10px;}
+
+.table1 th{
+  width:430px;
+  background: red;
+}
+
+.ukinfo{
+  width:100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.5)), url(WEBSITEIMAGES/Uktrack.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  position:relative;
+  box-sizing:border-box;
+  display: flex;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2rem
 }
