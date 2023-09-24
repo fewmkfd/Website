@@ -470,7 +470,8 @@ footer{
   height: 150px;
   width: 100vw;
   padding-top:40px;
-  color:white
+  color:white;
+  max-width: 100%;
   }
 
   .aboutme{
@@ -479,4 +480,5 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    
   }
